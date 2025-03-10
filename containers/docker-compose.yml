@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app1:
-    image: alpine
+    image: ubuntu
     command: sleep infinity
     networks:
       - internal_net
@@ -11,9 +11,10 @@ services:
         limits:
           cpus: "1.0"
           memory: "1GB"
+    cpuset: "0"
 
   app2:
-    image: alpine
+    image: ubuntu
     command: sleep infinity
     networks:
       - internal_net
@@ -22,9 +23,10 @@ services:
         limits:
           cpus: "1.0"
           memory: "1GB"
+    cpuset: "1"
 
   app3:
-    image: alpine
+    image: ubuntu
     command: sleep infinity
     networks:
       - internal_net
@@ -33,9 +35,9 @@ services:
         limits:
           cpus: "1.0"
           memory: "1GB"
+    cpuset: "2"
 
 networks:
   internal_net:
     driver: bridge
-
 

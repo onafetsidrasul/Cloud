@@ -1,0 +1,70 @@
+# sysbench --test=cpu --cpu-max-prime=20000 run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 20000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:  3943.10
+
+General statistics:
+    total time:                          10.0002s
+    total number of events:              39434
+
+Latency (ms):
+         min:                                    0.25
+         avg:                                    0.25
+         max:                                    1.62
+         95th percentile:                        0.27
+         sum:                                 9995.53
+
+Threads fairness:
+    events (avg/stddev):           39434.0000/0.00
+    execution time (avg/stddev):   9.9955/0.00
+sysbench --test=memory --memory-block-size=8K --memory-total-size=100G run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 8KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 13107200 (3542103.36 per second)
+
+102400.00 MiB transferred (27672.68 MiB/sec)
+
+
+General statistics:
+    total time:                          3.6999s
+    total number of events:              13107200
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                    1.32
+         95th percentile:                        0.00
+         sum:                                 2834.63
+
+Threads fairness:
+    events (avg/stddev):           13107200.0000/0.00
+    execution time (avg/stddev):   2.8346/0.00

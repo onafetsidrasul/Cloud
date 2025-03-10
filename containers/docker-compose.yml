@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  app1:
+    image: alpine
+    command: sleep infinity
+    networks:
+      - internal_net
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: "1GB"
+
+  app2:
+    image: alpine
+    command: sleep infinity
+    networks:
+      - internal_net
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: "1GB"
+
+  app3:
+    image: alpine
+    command: sleep infinity
+    networks:
+      - internal_net
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: "1GB"
+
+networks:
+  internal_net:
+    driver: bridge
+
+

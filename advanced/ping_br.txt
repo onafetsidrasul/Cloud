@@ -1,0 +1,16 @@
+sudo ip netns exec ns1 ping -c 10 192.168.2.2
+PING 192.168.2.2 (192.168.2.2) 56(84) bytes of data.
+64 bytes from 192.168.2.2: icmp_seq=1 ttl=64 time=0.373 ms
+64 bytes from 192.168.2.2: icmp_seq=2 ttl=64 time=0.097 ms
+64 bytes from 192.168.2.2: icmp_seq=3 ttl=64 time=0.124 ms
+64 bytes from 192.168.2.2: icmp_seq=4 ttl=64 time=0.080 ms
+64 bytes from 192.168.2.2: icmp_seq=5 ttl=64 time=0.163 ms
+64 bytes from 192.168.2.2: icmp_seq=6 ttl=64 time=0.061 ms
+64 bytes from 192.168.2.2: icmp_seq=7 ttl=64 time=0.058 ms
+64 bytes from 192.168.2.2: icmp_seq=8 ttl=64 time=0.077 ms
+64 bytes from 192.168.2.2: icmp_seq=9 ttl=64 time=0.072 ms
+64 bytes from 192.168.2.2: icmp_seq=10 ttl=64 time=0.155 ms
+
+--- 192.168.2.2 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9176ms
+rtt min/avg/max/mdev = 0.058/0.126/0.373/0.089 ms

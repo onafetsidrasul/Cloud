@@ -1,0 +1,16 @@
+# ping app2 -c 10
+PING app2 (172.18.0.4) 56(84) bytes of data.
+64 bytes from stefanolusardi-app2-1.stefanolusardi_internal_net (172.18.0.4): icmp_seq=1 ttl=64 time=0.097 ms
+64 bytes from stefanolusardi-app2-1.stefanolusardi_internal_net (172.18.0.4): icmp_seq=2 ttl=64 time=0.327 ms
+64 bytes from stefanolusardi-app2-1.stefanolusardi_internal_net (172.18.0.4): icmp_seq=3 ttl=64 time=0.199 ms
+64 bytes from stefanolusardi-app2-1.stefanolusardi_internal_net (172.18.0.4): icmp_seq=4 ttl=64 time=0.214 ms
+64 bytes from stefanolusardi-app2-1.stefanolusardi_internal_net (172.18.0.4): icmp_seq=5 ttl=64 time=0.186 ms
+64 bytes from stefanolusardi-app2-1.stefanolusardi_internal_net (172.18.0.4): icmp_seq=6 ttl=64 time=0.153 ms
+64 bytes from stefanolusardi-app2-1.stefanolusardi_internal_net (172.18.0.4): icmp_seq=7 ttl=64 time=0.157 ms
+64 bytes from stefanolusardi-app2-1.stefanolusardi_internal_net (172.18.0.4): icmp_seq=8 ttl=64 time=0.202 ms
+64 bytes from stefanolusardi-app2-1.stefanolusardi_internal_net (172.18.0.4): icmp_seq=9 ttl=64 time=0.187 ms
+64 bytes from stefanolusardi-app2-1.stefanolusardi_internal_net (172.18.0.4): icmp_seq=10 ttl=64 time=0.261 ms
+
+--- app2 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9239ms
+rtt min/avg/max/mdev = 0.097/0.198/0.327/0.059 ms

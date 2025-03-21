@@ -1,0 +1,20 @@
+# ip netns exec ns2 iperf3 -c 10.1.1.2
+Connecting to host 10.1.1.2, port 5201
+[  5] local 10.1.2.2 port 55244 connected to 10.1.1.2 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  9.01 GBytes  77.3 Gbits/sec    0   4.04 MBytes       
+[  5]   1.00-2.00   sec  9.27 GBytes  79.7 Gbits/sec    0   4.04 MBytes       
+[  5]   2.00-3.00   sec  9.19 GBytes  79.0 Gbits/sec    0   4.04 MBytes       
+[  5]   3.00-4.00   sec  9.25 GBytes  79.4 Gbits/sec    0   4.04 MBytes       
+[  5]   4.00-5.00   sec  9.26 GBytes  79.6 Gbits/sec    0   4.04 MBytes       
+[  5]   5.00-6.00   sec  9.01 GBytes  77.4 Gbits/sec    0   4.04 MBytes       
+[  5]   6.00-7.00   sec  9.16 GBytes  78.7 Gbits/sec    0   4.04 MBytes       
+[  5]   7.00-8.00   sec  9.14 GBytes  78.5 Gbits/sec    0   4.04 MBytes       
+[  5]   8.00-9.00   sec  8.97 GBytes  77.0 Gbits/sec    0   4.04 MBytes       
+[  5]   9.00-10.00  sec  8.97 GBytes  77.0 Gbits/sec    0   4.04 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  91.2 GBytes  78.4 Gbits/sec    0             sender
+[  5]   0.00-10.00  sec  91.2 GBytes  78.4 Gbits/sec                  receiver
+
+iperf Done.
